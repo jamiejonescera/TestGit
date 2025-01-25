@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Request Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <fieldset>
+                <legend>Requester Information:</legend>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Insert Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="position">Position:</label>
+                    <input type="text" id="position" name="position" placeholder="e.g., Teacher, Department Head" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <input type="text" id="department" name="department" placeholder="e.g., Science, Admin Office" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Request Details:</legend>
+                <div class="form-group">
+                    <label for="items">Item(s) Requested:</label>
+                    <textarea id="items" name="items" placeholder="e.g., Whiteboard Markers, Laptops" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="text" id="quantity" name="quantity" placeholder="e.g., 20 pcs, 5 units" required>
+                </div>
+                <div class="form-group">
+                    <label for="purpose">Purpose of Request:</label>
+                    <textarea id="purpose" name="purpose" placeholder="e.g., Classroom use, Staff training" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="required-by">Required By:</label>
+                    <input type="date" id="required-by" name="required-by" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Notes (if any):</legend>
+                <div class="form-group">
+                    <textarea id="notes" name="notes" placeholder="Add any specific requirements or instructions related to the request."></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Request Sent By:</legend>
+                <div class="form-group">
+                    <label for="requester-name">Name:</label>
+                    <input type="text" id="requester-name" name="requester-name" placeholder="Requester’s Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact Information:</label>
+                    <input type="text" id="contact" name="contact" placeholder="Email/Phone Number" required>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <button type="submit">Submit Request</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
